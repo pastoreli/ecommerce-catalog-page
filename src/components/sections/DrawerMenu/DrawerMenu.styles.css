@@ -1,0 +1,9 @@
+.drawer-container {
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+}
+
+.drawer-container.drawer-container--show {
+  transform: translateX(0);
+  transition: 0.5s ease-in-out;
+}

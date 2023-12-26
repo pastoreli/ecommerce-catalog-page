@@ -1,0 +1,44 @@
+.produc-card {
+  transition: all 0.2s;
+}
+
+@media (min-width: 768px) {
+  .produc-card:hover,
+  .produc-card:focus-within {
+    position: absolute;
+    z-index: 30;
+    width: calc(100% + 10rem);
+    height: auto;
+    top: -5rem;
+    left: -5rem;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 1.5rem;
+    overflow: auto;
+  }
+
+  .produc-card:hover .product-card-details,
+  .produc-card:focus-within .product-card-details {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .produc-card:hover .product-card-details-title,
+  .produc-card:focus-within .product-card-details-title {
+    overflow: auto;
+    text-overflow: unset;
+    white-space: unset;
+    word-break: break-all;
+  }
+
+  .produc-card:hover .product-card-details-description,
+  .produc-card:focus-within .product-card-details-description {
+    display: inline-block;
+    word-break: break-all;
+  }
+}
+
+.produc-card:hover .produc-card-add-to-cart,
+.produc-card:focus-within .produc-card-add-to-cart {
+  display: block;
+}

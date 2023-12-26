@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-range__track {
+  background-color: theme(colors.grey-600);
+}
+
+.input-range__slider {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: -0.2rem;
+  background-color: theme(colors.primary);
+  border-color: theme(colors.primary);
+}
+
+.input-range__label {
+  display: none;
+}
+
